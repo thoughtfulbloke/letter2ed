@@ -129,8 +129,8 @@ years.
 
 As New Zealand, no different to most other advanced economies, has seen
 the rate of decrease in mortality slow over time, the length of the
-linear trend baseline period should be short enough not to be
-introducing error as a result of applying a straight line of best fit to
+linear trend baseline period should be short enough to not 
+introduce error as a result of applying a straight line of best fit to
 curved data.
 
 <figure>
