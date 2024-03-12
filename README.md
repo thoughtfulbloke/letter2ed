@@ -172,7 +172,7 @@ estimate rounding to 4%.
 Though not mentioned in the paper, adding the Population as a model term
 to a death based model should be functionally equivalent to using the
 commonly known Crude Mortality Rate (deaths among the total population /
-total living population). And a 2015-2019 linear regression of the
+total living population). A 2015-2019 linear regression of the
 annual CMR gives an excess of 1%.
 
 Gibson’s method produces results further from actuarial standard methods
