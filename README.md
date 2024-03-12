@@ -46,7 +46,7 @@ change effects Gibson is trying to model.
 While calculation of New Zealand’s cummulative excess mortality for
 2020-2022 can vary by a couple of percentage points depending on the
 exact method, using a death rates by age (standardised) method the
-Institute of Actuaries find New Zealand’s excess mortality from week 10
+Institute of Actuaries finds New Zealand’s excess mortality from week 10
 2020 to the end of 2022 to be -4% (that there are 4% fewer deaths than
 would be expected based on pre-COVID-19 trends)[^5].
 
