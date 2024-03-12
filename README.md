@@ -122,7 +122,7 @@ long-term continuity, cumulative excess is -5%.
 
 Excess mortality is the difference to what is expected for mortality, so
 excess calculations using any method are sensitive what is considered
-normal- the baseline. For Age Standardised Mortality the normal process
+normal: the baseline. For Age Standardised Mortality the normal process
 is to use a linear trend of preceding years, and in the case of a major
 multi-year event like a pandemic, the linear trend of pre-pandemic
 years.
