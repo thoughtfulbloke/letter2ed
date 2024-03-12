@@ -37,7 +37,7 @@ risk of death on a uniform basis. In New Zealand, tutorials on making
 mortality comparisons by using death rates by age and standardising to a
 reference population have been published since the 1890s[^4].
 
-Age Standardised Mortality direct adjusts for both population growth and
+Age Standardised Mortality directly adjusts for both population growth and
 aging, as it is based on the number of deaths of the current resident
 population divided by the living current resident population, stratified
 by age group and time period. This directly measures the population
