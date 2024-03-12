@@ -246,7 +246,7 @@ industry standard, and shouldn’t be ignored.\]
 
 [^3]: 1767 whatever
 
-[^4]: NZ statistical handbook 1890
+[^4]: [NZ Official Statistical Handbook, 1890](https://www3.stats.govt.nz/historic_publications/1890-official-handbook/1890-official-handbook.html)
 
 [^5]: Actuaries Institute: CMI Working Paper 180
     https://www.actuaries.org.uk/learn-and-develop/continuous-mortality-investigation/cmi-working-papers/mortality-projections/cmi-working-paper-180
