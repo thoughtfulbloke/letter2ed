@@ -73,7 +73,7 @@ it does establish that there is an established methodology, not mentiond
 in Gibson’s article, underpinnning claims of New Zealand negative
 excess, and that method has been used for centuries, world-wide, across
 multiple disciplines. We can check if New Zealand medical
-professionals are aware of this by asking them- *“the key point being
+professionals are aware of this by asking them: *“the key point being
 any comparisons both within country (over time) or between countries
 should be age standardised to provide the most accurate picture possible
 (and of course be based on high quality and complete underlying deaths
