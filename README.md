@@ -11,7 +11,7 @@ Things David knows he still needs to do:
 
 To the editor and editorial board,
 
-I am formally writing to point out the sgnificant errors in the paper
+I am formally writing to point out the significant errors in the paper
 from Gibson (2024)[^1], published in your journal. In particular, the
 paper asserts two claims:
 
