@@ -24,7 +24,7 @@ paper asserts two claims:
 
 Neither of these claims are accurate.
 
-# The underpinng of New Zealand’s mortality measurement
+# The underpinning of New Zealand’s mortality measurement
 
 For centuries, it has been established practice among actuaries,
 demographers, and health researchers to measure mortality using death
