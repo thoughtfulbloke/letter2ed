@@ -177,11 +177,11 @@ annual CMR gives an excess of 1%.
 
 Gibson’s method produces results further from actuarial standard methods
 than the K&K method. The reason for Gibson’s model performing so poorly
-compared to K&K lies in implicitly misapplying death rates by age. Young
-people migrate a lot and die little. Old people migrate little and die a
-lot. Applying a correction based on the amount of migration to the
-mortality of the total population (dominated by people not migrating)
-introduces unnecessary structural error.
+compared to K&K lies in implicitly misapplying death rates by age. Young 
+people often migrate, but don't die very often. Old people often die, 
+but don't migrate very often. Applying a correction based on the amount 
+of migration to the mortality of the total population (dominated by 
+people not migrating) introduces unnecessary structural error.
 
 <figure>
 <img src="immigration.png"
