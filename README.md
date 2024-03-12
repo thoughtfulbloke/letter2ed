@@ -48,7 +48,7 @@ While calculation of New Zealand’s cummulative excess mortality for
 exact method, using a death rates by age (standardised) method the
 Institute of Actuaries find New Zealand’s excess mortality from week 10
 2020 to the end of 2022 to be -4% (that there are 4% fewer deaths than
-would be expected based on precovid trends)[^5].
+would be expected based on pre-COVID-19 trends)[^5].
 
 The Our World in Data graph, and the K&K method that underlies it is an
 approximation (if it is a better or worse approximation to
@@ -114,7 +114,7 @@ ages groups by sex to 94 then 95+, and a linear baseline from 2013-2019,
 a standard reference population of 2023 gives a cumulative excess of -5%
 for 2020 to 2022. Using a standard reference population of 2021 when the
 borders were restricted gives a cumulative excess of -6%. Using a
-pre-covid standard population of 2019 gives a cumulative excess of -5%.
+pre-COVID-19 standard population of 2019 gives a cumulative excess of -5%.
 Using the standard population of 1961, used by Stats NZ to maintain
 long-term continuity, cumulative excess is -5%.
 
@@ -205,8 +205,8 @@ Gabel and Knox (2023) put forward as a reason for the excess mortality
 in 2022, it should also show up prior to the COVID-19 era, given that
 societal aging is a long-term process.*
 
-It does show up before covid. If you do exactly the same type of
-analysis, but before covid and the arguments around closing the border,
+It does show up before COVID-19. If you do exactly the same type of
+analysis, but before COVID-19 and the arguments around closing the border,
 of comparing the crude death rate (which ignores aging but adjusts for
 total population size) of the 3 years (2017-2019) after the 5 year
 baseline (2012-2016) to the expected values of the baseline, then the
@@ -216,8 +216,8 @@ most recent three years are a cumulative 10% above baseline.
 <img src="figure5.png"
 data-fig-alt="Aging increases deaths and the crude death rate"
 data-fig-align="center"
-alt="Even if all years are before covid, the post-baseline years are above trend" />
-<figcaption aria-hidden="true">Even if all years are before covid, the
+alt="Even if all years are before COVID-19, the post-baseline years are above trend" />
+<figcaption aria-hidden="true">Even if all years are before COVID-19, the
 post-baseline years are above trend</figcaption>
 </figure>
 
