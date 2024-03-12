@@ -51,8 +51,8 @@ Institute of Actuaries find New Zealand’s excess mortality from week 10
 would be expected based on precovid trends)[^5].
 
 The Our World in Data graph, and the K&K method that underlies it is an
-approximation, and while if it is a better or worse approximation to
-Gibson’s method will be discussed later, while recognising the Our World
+approximation (if it is a better or worse approximation to
+Gibson’s method will be discussed later), and while recognising the Our World
 In Data graph is an approximation there are still several practically
 useful implicit features about it.
 
