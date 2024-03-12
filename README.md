@@ -107,8 +107,8 @@ data-fig-align="center" alt="ASMR steps" />
 </figure>
 
 While some variation in calculation results can stem from choice of
-standard population, due to the variation of young and old within a
-population, pragmatically any population that can be argued to be
+standard population (due to the variation of young and old within a
+population), pragmatically any population that can be argued to be
 analytically useful should produce similar results. Using single year
 ages groups by sex to 94 then 95+, and a linear baseline from 2013-2019,
 a standard reference population of 2023 gives a cumulative excess of -5%
