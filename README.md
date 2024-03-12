@@ -152,9 +152,8 @@ While many international comparisons use a 5 year baseline range to
 increase the number of countries for which weekly level data is
 available, in practice the results for New Zealand do not differ
 substantively between a 5 (2015-2019) and 7 (2013-2019) year baseline
-period. A 5 year linear baseline with a 2022 standard population gives a
-cumulative excess for the period of -5%, while a 7 year baseline gives a
-cumulative baseline of -5%.
+period. A 5 year linear baseline and a 7 year baseline both give a cumulative
+excess for the period of -5% with a 2022 standard population.
 
 ## Comparison of Gibson and Karlinsky & Kobak
 
