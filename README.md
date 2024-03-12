@@ -64,7 +64,7 @@ useful implicit features about it.
   presentation rather than the method, but it is still a practical
   benefit.
 
-While the existance of centuries of mortality measurement (not mentioned
+While the existence of centuries of mortality measurement (not mentioned
 in Gibson’s article) does not directly address if New Zealand medical
 professionals are aware that best practice mortality calculations
 recognise that people of different ages die at different rates when
