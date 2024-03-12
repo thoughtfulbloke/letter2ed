@@ -32,7 +32,7 @@ rates by age where such data is available[^3]. This method superseded
 Crude Mortality Rates, where CMR takes into account total population
 change in comparisons by dividing the total number of deaths by the
 total number of people available to die, improving CMR by acknowledging
-that different ages have different risks of death so comparing age based
+that different ages have different risks of death, so comparing age-based
 risk of death on a uniform basis. In New Zealand, tutorials on making
 mortality comparisons by using death rates by age and standardising to a
 reference population have been published since the 1890s[^4].
