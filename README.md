@@ -69,7 +69,7 @@ in Gibson’s article) does not directly address if New Zealand medical
 professionals are aware that best practice mortality calculations
 recognise that people of different ages die at different rates when
 using the publicly available Our World in Data graphs in media pieces,
-it does establish that there is an established methodology, not mentiond
+it does establish that there is an established methodology, not mentioned
 in Gibson’s article, underpinning claims of New Zealand's negative
 excess, and that method has been used for centuries, world-wide, across
 multiple disciplines. We can check if New Zealand medical
