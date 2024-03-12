@@ -231,7 +231,7 @@ discussions that the predicted results from Gibson's model are impossible
 if you look at the change in population from 2019 to 2020 and the change
 in deaths from 2019 to 2020, due to the young migrate/old die thing.
 There were 2 reasons: (1) The model Gibson used in his article is
-sufficiently undocumented I cannot exactly replicate is claims over 3
+sufficiently undocumented I cannot exactly replicate his claims over 3
 years, so making a claim about 1 year is filled with assumptions that
 there would be distracting quibble fights about. (2) While it
 demonstrates this particular model is impossible, that distracts from
