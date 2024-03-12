@@ -115,7 +115,7 @@ a standard reference population of 2023 gives a cumulative excess of -5%
 for 2020 to 2022. Using a standard reference population of 2021 when the
 borders were restricted gives a cumulative excess of -6%. Using a
 pre-covid standard population of 2019 gives a cumulative excess of -5%.
-Using the standard population of 1961, used by StatsNZ to maintain
+Using the standard population of 1961, used by Stats NZ to maintain
 long-term continuity, cumulative excess is -5%.
 
 ### Baselines and excess mortality
