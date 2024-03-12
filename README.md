@@ -85,7 +85,7 @@ As Age Standardised Mortality is a standard across multiple disciplines,
 but is not raised in the Gibson paper, a brief review is in order.
 
 Death rates for an age stratified group, for a time period in a given
-location, measure that rate at which that age group dies. These can be
+location, measure the rate at which that age group dies. These can be
 directly compared to death rates in other time periods and locations to
 compare if the group experience is more or less deadly. As it is a rate,
 it automatically adjusts for change in the population size of the age
