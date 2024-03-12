@@ -163,7 +163,7 @@ age standised mortality, giving a cumulative excess mortality for
 we can compare other methods to that.
 
 The Our World in Data Cummalative Excess (Projection based on Karlinsky
-& Kobak) gives cumulative excess mortality for 2020-2022 as 0%
+& Kobak) gives cumulative excess mortality for 2020-2022 as 0%.
 
 Gibson’s Population adjusted for changes in growth rates model gives an
 excess mortality for 2020-2022 range of 1.7% to 5.3% with the central
