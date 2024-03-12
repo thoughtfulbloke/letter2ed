@@ -64,20 +64,20 @@ useful implicit features about it.
   presentation rather than the method, but it is still a practical
   benefit.
 
-While the existence of centuries of mortality measurement (not mentioned
-in Gibson’s article) does not directly address if New Zealand medical
-professionals are aware that best practice mortality calculations
-recognise that people of different ages die at different rates when
-using the publicly available Our World in Data graphs in media pieces,
-it does establish that there is an established methodology, not mentioned
-in Gibson’s article, underpinning claims of New Zealand's negative
-excess, and that method has been used for centuries, world-wide, across
-multiple disciplines. We can check if New Zealand medical
-professionals are aware of this by asking them: *“the key point being
-any comparisons both within country (over time) or between countries
-should be age standardised to provide the most accurate picture possible
-(and of course be based on high quality and complete underlying deaths
-data which we can say NZ’s are!)”*(Ashley Bloomfield) [^6]
+While the existence of centuries of mortality measurement does not 
+directly address if New Zealand medical professionals are aware that 
+best practice mortality calculations recognise that people of different 
+ages die at different rates when using the publicly available Our World 
+in Data graphs in media pieces, it does establish that there is an 
+established methodology (not mentioned in Gibson’s article) 
+underpinning claims of New Zealand's negative excess, and that method 
+has been used for centuries, world-wide, across multiple disciplines. 
+We can check if New Zealand medical professionals are aware of this by 
+asking them: *“the key point being any comparisons both within country 
+(over time) or between countries should be age standardised to provide 
+the most accurate picture possible (and of course be based on high 
+quality and complete underlying deaths data which we can say NZ’s 
+are!)”*(Ashley Bloomfield) [^6]
 
 ## Age Standardised Mortality Review
 
