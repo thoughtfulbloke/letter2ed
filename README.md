@@ -227,7 +227,7 @@ Zealand death rates by age, or indeed the public, downloadable
 standardised death rates.
 
 \[ Note only for the draft, for those with whom I had very early
-discussions that the predicted results from Gibsons model are impossible
+discussions that the predicted results from Gibson's model are impossible
 if you look at the change in population from 2019 to 2020 and the change
 in deaths from 2019 to 2020, due to the young migrate/old die thing.
 There were 2 reasons: (1) The model Gibson used in his article is
