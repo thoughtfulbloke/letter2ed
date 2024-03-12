@@ -222,7 +222,7 @@ post-baseline years are above trend</figcaption>
 </figure>
 
 I suggest anyone interested in this topic go explore population ages and
-death rates at StatsNZ themeselves, and while there have a look at New
+death rates at Stats NZ themeselves, and while there have a look at New
 Zealand death rates by age, or indeed the public, downloadable
 standardised death rates.
 
