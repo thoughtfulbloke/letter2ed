@@ -179,7 +179,7 @@ Gibson’s method produces results further from actuarial standard methods
 than the K&K method. The reason for Gibson’s model preforming so poorly
 compared to K&K lies in implicitly misapplying death rates by age. Young
 people migrate a lot and die little. Old people migrate little and die a
-lot. Apply a correction based on the amount of migration to the
+lot. Applying a correction based on the amount of migration to the
 mortality of the total population (dominated by people not migrating)
 introduces unnecessary structural error.
 
