@@ -198,7 +198,7 @@ are not migrating, so it does not diverge as far from ASM as the Gibson
 method when population changes take place that do not effect the
 population at risk of death.
 
-Gibson asserted that it was not important to incorporate aging
+Gibson asserted that it was not important to incorporate aging.
 
 *If societal aging was a cause of the increased number of deaths, as
 Gabel and Knox (2023) put forward as a reason for the excess mortality
