@@ -3,15 +3,18 @@ Draft Letter
 David Hood
 3/14/24
 
-Things David knows he still needs to do:
+Things David knows he still needs to do (that don’t alter overall
+content):
 
 - more proofreading.
 
-- standardised citation format.
+- standard citation format.
 
 - clear links to source data.
 
 - standard figure look
+
+- Captions under graphs.
 
 *The timetable is: I am welcoming changes up to Thursday 21st and
 regularly updating the draft here until then. On Thursday 21st I will
@@ -65,10 +68,10 @@ Institute of Actuaries finds New Zealand’s excess mortality from week 10
 would be expected based on pre-COVID-19 trends)[^5].
 
 The Our World in Data graph, and the Karlinsky and Kobak method that
-underlies it is an approximation (if it is a better or worse
+underlies it, is an approximation (if it is a better or worse
 approximation to Gibson’s method will be discussed later). While
 recognising the Our World In Data graph is an approximation, there are
-still several practically useful implicit features about it.
+still several practically useful implicit features about it:
 
 - Being based on trends of deaths, it enables a common basis comparison
   with countries that lack age stratified current population information
@@ -92,7 +95,7 @@ being any comparisons both within country (over time) or between
 countries should be age standardised to provide the most accurate
 picture possible (and of course be based on high quality and complete
 underlying deaths data which we can say NZ’s are!)”*(Ashley Bloomfield)
-[^6]
+[^6].
 
 ## Age Standardised Mortality Review
 
@@ -125,13 +128,13 @@ Some variation in calculation results can be caused by the choice of
 standard population, due to the variation of young and old within a
 population. However, pragmatically, any population that can be argued to
 be analytically useful should produce similar results. Using single year
-ages groups by sex to 94 then 95+, and a linear baseline from 2013-2019,
-a standard reference population of 2023 gives a cumulative excess of -5%
-for 2020 to 2022. Using a standard reference population of 2021 when the
-borders were restricted gives a cumulative excess of -6%. Using a
-pre-COVID-19 standard population of 2019 gives a cumulative excess of
--5%. Using the standard population of 1961, used by Stats NZ to maintain
-long-term continuity, cumulative excess is -5%.
+ages groups by sex to 94 then 95+[^7], and a linear baseline from
+2013-2019, a standard reference population of 2023 gives a cumulative
+excess of -5% for 2020 to 2022. Using a standard reference population of
+2021 when the borders were restricted gives a cumulative excess of -6%.
+Using a pre-COVID-19 standard population of 2019 gives a cumulative
+excess of -5%. Using the standard population of 1961, used by Stats NZ
+to maintain long-term continuity, cumulative excess is -5%.
 
 ### Baselines and excess mortality
 
@@ -150,18 +153,24 @@ curved data.
 
 <figure>
 <img src="md_figures/figure2.png" data-fig-alt="Overlong baseline error"
-data-fig-align="center" alt="baseline" />
-<figcaption aria-hidden="true">baseline</figcaption>
+data-fig-align="center"
+alt="Figure 2: Structural error introduced by overly long baselines. Longterm (age) standardised death rates from https://infoshare.stats.govt.nz in Population : Death Rates - DMM : Standardised death rates (Maori and total population) (Annual-Dec) : Total Population" />
+<figcaption aria-hidden="true">Figure 2: Structural error introduced by
+overly long baselines. Longterm (age) standardised death rates from
+https://infoshare.stats.govt.nz in Population : Death Rates - DMM :
+Standardised death rates (Maori and total population) (Annual-Dec) :
+Total Population</figcaption>
 </figure>
 
 Based on the influenza season patterns in recent pre-pandemic years, the
 Australian Bureau of Statistics (ABS) considers 2013-2019 to give the
-best baseline[^7]. New Zealand has seen a very similar history in this
-period to Australia, with the added limitation that incorporating 2011,
-the year of the Christchurch Earthquake and the residents of the second
-largest city living in broken housing through the following winter, is a
-poor influence point to use in a baseline as it is not a re-occurring
-annual event.
+best baseline[^8]. New Zealand has seen a very similar history in this
+period to Australia, with the added limitation that using 2011, the year
+of the Christchurch Earthquake and the residents of the second largest
+city living in broken housing through the following winter, is an
+extremely poor choice to include in baselines as an earthquake hitting
+the second largest city and people living in broken housing through the
+winter is not a reoccuring annual event.
 
 While many international comparisons use a 5 year baseline range to
 increase the number of countries for which weekly level data is
@@ -229,14 +238,19 @@ total population size) of the 3 years (2017-2019) after the 5 year
 baseline (2012-2016) to the expected values of the baseline, then the
 most recent three years are a cumulative 10% above baseline.
 
-<figure>
 <img src="md_figures/figure5.png"
 data-fig-alt="Aging increases deaths and the crude death rate"
 data-fig-align="center"
 alt="Even if all years are before COVID-19, the post-baseline years are above trend" />
-<figcaption aria-hidden="true">Even if all years are before COVID-19,
-the post-baseline years are above trend</figcaption>
-</figure>
+Of more surprise is that Gibson’s results for 2020-22 less well
+approximate the crude mortality rate than Karlinsky & Kobak, since the
+crude mortality rate is the accepted method of comparing death rates
+while ignoring the effects of age. While there is not enough information
+in the paper to exactly replicate Gibson’s method and achieve the same
+answers, part of the reason for the difference seems likely to be the
+unusual step of treating population as an additive contributor to deaths
+in his modification of the regression. But, compared to the differences
+with methods acknowledging age, such problems are minor.
 
 I suggest anyone interested in this topic go explore population ages and
 death rates at Stats NZ themselves, and while there have a look at New
@@ -270,5 +284,11 @@ confounders?
 
 [^6]: Ashley Bloomfield, 2024, personal communication
 
-[^7]: Australian Bureau of Statistics.
+[^7]: NZ annual deaths are available from
+    <https://infoshare.stats.govt.nz> in Population : Deaths : Deaths by
+    age and sex (Annual-Dec). NZ mean annual population is available
+    from Population : Population Estimates - DPE : Estimated Resident
+    Population by Age and Sex (1991+) (Annual-Dec) : Mean year ended.
+
+[^8]: Australian Bureau of Statistics.
     https://www.abs.gov.au/articles/measuring-australias-excess-mortality-during-covid-19-pandemic-until-first-quarter-2023#methodology
