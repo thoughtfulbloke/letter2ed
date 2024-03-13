@@ -29,8 +29,8 @@ decisions on the claims made. In particular, the paper asserts two
 claims:
 
 - That claims of negative New Zealand mortality are underpinned by the
-  “Our World In Data” projection graph using the method of check names
-  all[^2].
+  “Our World In Data” projection graph using the method of Karlinsky &
+  Kobak[^2].
 - That Gibson’s method, producing positive excess mortality, is more
   effective than Karlinsky & Kobak in determining mortality as it
   adjusts for population change due to immigration changes.

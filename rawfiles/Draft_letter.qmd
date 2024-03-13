@@ -24,7 +24,7 @@ I am formally writing to point out the significant errors in the paper from Gibs
 
 [^1]: John Gibson (22 Feb 2024): Cumulative excess deaths in New Zealand in the COVID-19 era: biases from ignoring changes in population growth rates, New Zealand Economic Papers, DOI: 10.1080/00779954.2024.2314770
 
--   That claims of negative New Zealand mortality are underpinned by the "Our World In Data" projection graph using the method of check names all[^2].
+-   That claims of negative New Zealand mortality are underpinned by the "Our World In Data" projection graph using the method of Karlinsky & Kobak[^2].
 -   That Gibson's method, producing positive excess mortality, is more effective than Karlinsky & Kobak in determining mortality as it adjusts for population change due to immigration changes.
 
 [^2]: Ariel Karlinsky, Dmitry Kobak (2021) Tracking excess mortality across countries during the COVID-19 pandemic with the World Mortality Dataset eLife 10:e69336. Code available from https://github.com/dkobak/excess-mortality 
