@@ -106,10 +106,9 @@ Gibson asserted that it was not important to incorporate aging:
 
 *If societal aging was a cause of the increased number of deaths, as Gabel and Knox (2023) put forward as a reason for the excess mortality in 2022, it should also show up prior to the COVID-19 era, given that societal aging is a long-term process.*
 
-But, it does show up before COVID-19. If you do exactly the same type of analysis, but before covid and the arguments around closing the border, of comparing the crude death rate (which ignores aging but adjusts for total population size) of the 3 years (2017-2019) after the 5 year baseline (2012-2016) to the expected values of the baseline, then the most recent three years are a cumulative 10% above baseline.
+The assumption that aging is a long term process so should show up as a long slow process only applies if there are no sudden demographic shifts among age groups that alter the risk of death. The number of 75 and older residents, when compared to the 2012-2016 trend, and that trend can be seen increasing in 2019. This matches a "sudden" demographic shift of a spike in the age distribution that began decades earlier and naturally aged into ranges that play a more significant role in total deaths.
 
-![Figure 4: Applying the same test to pre-covid years shows the same aging population effects](md_figures/figure5.png){fig-alt="Aging increases deaths and the crude death rate" fig-align="center"}
-
+![Figure 4: The rate of increase in elderly accelerated in 2019](md_figures/figure4.png){fig-alt="Aging increases deaths and the crude death rate" fig-align="center"}
 
 Of more surprise is that Gibson's results for 2020-22 less well approximate the crude mortality rate than Karlinsky & Kobak, since the crude mortality rate is the accepted method of comparing death rates while ignoring the effects of age. While there is not enough information in the paper to exactly replicate Gibson's method and achieve the same answers, part of the reason for the difference seems likely to be the unusual step of treating population as an additive contributor to deaths in his modification of the regression. But, compared to the differences with methods acknowledging age, such problems are minor.
 

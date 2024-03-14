@@ -1,6 +1,7 @@
-# Draft Letter
+Draft Letter
+================
 David Hood
-2024-03-14
+3/15/24
 
 Things David knows he still needs to do (that don’t alter overall
 content):
@@ -117,8 +118,11 @@ age structure.
 
 *Figure 1*
 
+<figure>
 <img src="md_figures/figure1.png" data-fig-alt="ASMR process"
 data-fig-align="center" alt="ASMR steps" />
+<figcaption aria-hidden="true">ASMR steps</figcaption>
+</figure>
 
 Some variation in calculation results can be caused by the choice of
 standard population, due to the variation of young and old within a
@@ -147,9 +151,16 @@ linear trend baseline period should be short enough not to be
 introducing error as a result of applying a straight line of best fit to
 curved data.
 
+<figure>
 <img src="md_figures/figure2.png" data-fig-alt="Overlong baseline error"
 data-fig-align="center"
 alt="Figure 2: Structural error introduced by overly long baselines. Longterm (age) standardised death rates from https://infoshare.stats.govt.nz in Population : Death Rates - DMM : Standardised death rates (Maori and total population) (Annual-Dec) : Total Population" />
+<figcaption aria-hidden="true">Figure 2: Structural error introduced by
+overly long baselines. Longterm (age) standardised death rates from
+https://infoshare.stats.govt.nz in Population : Death Rates - DMM :
+Standardised death rates (Maori and total population) (Annual-Dec) :
+Total Population</figcaption>
+</figure>
 
 Based on the influenza season patterns in recent pre-pandemic years, the
 Australian Bureau of Statistics (ABS) considers 2013-2019 to give the
@@ -198,10 +209,14 @@ Applying a correction based on the amount of migration to the mortality
 of the total population (dominated by people not migrating) introduces
 unnecessary structural error.
 
+<figure>
 <img src="md_figures/figure3.png"
 data-fig-alt="Young people migrate, old people die"
 data-fig-align="center"
 alt="Figure 3: Ages of migration and ages of death have little overlap" />
+<figcaption aria-hidden="true">Figure 3: Ages of migration and ages of
+death have little overlap</figcaption>
+</figure>
 
 Conversely, because the Karlinsky & Kobak method only uses death data,
 it implicitly limits itself to the population that dies. The population
@@ -216,17 +231,23 @@ Gabel and Knox (2023) put forward as a reason for the excess mortality
 in 2022, it should also show up prior to the COVID-19 era, given that
 societal aging is a long-term process.*
 
-But, it does show up before COVID-19. If you do exactly the same type of
-analysis, but before covid and the arguments around closing the border,
-of comparing the crude death rate (which ignores aging but adjusts for
-total population size) of the 3 years (2017-2019) after the 5 year
-baseline (2012-2016) to the expected values of the baseline, then the
-most recent three years are a cumulative 10% above baseline.
+The assumption that aging is a long term process so should show up as a
+long slow process only applies if there are no sudden demographic shifts
+among age groups that alter the risk of death. The number of 75 and
+older residents, when compared to the 2012-2016 trend, and that trend
+can be seen increasing in 2019. This matches a “sudden” demographic
+shift of a spike in the age distribution that began decades earlier and
+naturally aged into ranges that play a more significant role in total
+deaths.
 
-<img src="md_figures/figure5.png"
+<figure>
+<img src="md_figures/figure4.png"
 data-fig-alt="Aging increases deaths and the crude death rate"
 data-fig-align="center"
-alt="Figure 4: Applying the same test to pre-covid years shows the same aging population effects" />
+alt="Figure 4: The rate of increase in elderly accelerated in 2019" />
+<figcaption aria-hidden="true">Figure 4: The rate of increase in elderly
+accelerated in 2019</figcaption>
+</figure>
 
 Of more surprise is that Gibson’s results for 2020-22 less well
 approximate the crude mortality rate than Karlinsky & Kobak, since the

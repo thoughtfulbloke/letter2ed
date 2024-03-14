@@ -62,7 +62,7 @@ ggplot(aes(x=AgeN, y=percent, fill=series))+
   scale_fill_manual(values=six_cols, name="Series:")+
   scale_x_continuous(breaks=c(0,30,60,90),
                      labels=c("under 1","30","60","90+")) +
-  labs(title="2019 Deaths vs. Migrants as percentage of resident population",
+  labs(title="2019 Deaths vs. Migrants\nas percentage of resident population",
        y="Percentage", x="Age",
        caption="Source: infoshare.stats.govt.nz")
 ggsave(filename="md_figures/figure3.png",
