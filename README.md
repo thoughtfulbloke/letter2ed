@@ -1,7 +1,7 @@
 Draft Letter
 ================
 David Hood
-3/15/24
+3/16/24
 
 Things David knows he still needs to do (that don’t alter overall
 content):
@@ -26,8 +26,8 @@ beginning Monday 25th.*
 To the editor and editorial board,
 
 I am formally writing to point out the significant errors in the paper
-from Gibson (2024)[^1], published in your journal. It is important that both you
-and your readership be aware of its shortcomings before basing any
+from Gibson (2024)[^1], published in your journal. It is important both
+you and your readership are aware of its shortcomings before basing any
 decisions on the claims made. In particular, the paper asserts two
 claims:
 

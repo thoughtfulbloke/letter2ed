@@ -21,7 +21,7 @@ Things David knows he still needs to do (that don't alter overall content):
 
 To the editor and editorial board,
 
-I am formally writing to point out the significant errors in the paper from Gibson (2024)[^1], published in your journal, as I feel both you and your readership should be aware of the problems before basing any decisions on the claims made. In particular, the paper asserts two claims:
+I am formally writing to point out the significant errors in the paper from Gibson (2024)[^1], published in your journal. It is important both you and your readership are aware of its shortcomings before basing any decisions on the claims made. In particular, the paper asserts two claims:
 
 [^1]: John Gibson (22 Feb 2024): Cumulative excess deaths in New Zealand in the COVID-19 era: biases from ignoring changes in population growth rates, New Zealand Economic Papers, DOI: 10.1080/00779954.2024.2314770
 
