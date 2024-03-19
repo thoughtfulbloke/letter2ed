@@ -1,7 +1,7 @@
 Draft Letter
 ================
 David Hood
-3/16/24
+3/20/24
 
 Things David knows he still needs to do (that don’t alter overall
 content):
@@ -73,8 +73,12 @@ approximation to Gibson’s method will be discussed later). While
 recognising the Our World In Data graph is an approximation, there are
 still several practically useful implicit features about it:
 
-- Being based on trends of deaths, it enables a common basis comparison
-  with countries that lack age stratified current population information
+- Being based on trends of deaths, it enables a common, consistent basis
+  comparison with countries that lack age stratified current population
+  information. As Gibson notes, Karlinsky and Kobak were initially able
+  to provide comparison data for 103 countries (later 127). By contrast
+  the mortality.org has weekly death rates by age (suitable for age
+  standard mortality comparisons) for 38 countries[^6].
 - It makes weekly comparisons available.
 - Able to be checked by any member of the public for the latest current
   worldwide information. This last is a function of Our World in Data
@@ -90,12 +94,13 @@ it does establish that there is an established methodology, not
 mentioned in Gibson’s article, underpinning claims of New Zealand’s
 negative excess, and that method has been used for centuries,
 world-wide, across multiple disciplines. We can check if New Zealand
-medical professionals are aware of this by asking them: *“the key point
-being any comparisons both within country (over time) or between
-countries should be age standardised to provide the most accurate
-picture possible (and of course be based on high quality and complete
-underlying deaths data which we can say NZ’s are!)”*(Ashley Bloomfield)
-[^6].
+medical professionals are aware of this by asking them.
+
+> “*the key point being any comparisons both within country (over time)
+> or between countries should be age standardised to provide the most
+> accurate picture possible (and of course be based on high quality and
+> complete underlying deaths data which we can say NZ’s are!)*”(Ashley
+> Bloomfield) [^7].
 
 ## Age Standardised Mortality Review
 
@@ -116,27 +121,20 @@ addresses this by assessing the total population deaths on the basis of
 death rates by age if the places and times being compared had the same
 age structure.
 
-*Figure 1*
-
-<figure>
-<img src="md_figures/figure1.png" data-fig-alt="ASMR process"
-data-fig-align="center" alt="ASMR steps" />
-<figcaption aria-hidden="true">ASMR steps</figcaption>
-</figure>
+The total of standard deaths can optionally be divided by the standard
+population to make age standardised mortality rates.
 
 Some variation in calculation results can be caused by the choice of
 standard population, due to the variation of young and old within a
 population. However, pragmatically, any population that can be argued to
 be analytically useful should produce similar results. Using single year
-ages groups by sex to 94 then 95+[^7], and a linear baseline from
+age death rates by sex to 94 then 95+[^8], and a linear baseline from
 2013-2019, a standard reference population of 2023 gives a cumulative
 excess of -5% for 2020 to 2022. Using a standard reference population of
 2021 when the borders were restricted gives a cumulative excess of -6%.
 Using a pre-COVID-19 standard population of 2019 gives a cumulative
 excess of -5%. Using the standard population of 1961, used by Stats NZ
 to maintain long-term continuity, cumulative excess is -5%.
-
-### Baselines and excess mortality
 
 Excess mortality is the difference to what is expected for mortality, so
 excess calculations using any method are sensitive what is considered
@@ -151,29 +149,17 @@ linear trend baseline period should be short enough not to be
 introducing error as a result of applying a straight line of best fit to
 curved data.
 
-<figure>
-<img src="md_figures/figure2.png" data-fig-alt="Overlong baseline error"
-data-fig-align="center"
-alt="Figure 2: Structural error introduced by overly long baselines. Longterm (age) standardised death rates from https://infoshare.stats.govt.nz in Population : Death Rates - DMM : Standardised death rates (Maori and total population) (Annual-Dec) : Total Population" />
-<figcaption aria-hidden="true">Figure 2: Structural error introduced by
-overly long baselines. Longterm (age) standardised death rates from
-https://infoshare.stats.govt.nz in Population : Death Rates - DMM :
-Standardised death rates (Maori and total population) (Annual-Dec) :
-Total Population</figcaption>
-</figure>
-
 Based on the influenza season patterns in recent pre-pandemic years, the
 Australian Bureau of Statistics (ABS) considers 2013-2019 to give the
-best baseline[^8]. New Zealand has seen a very similar history in this
+best baseline[^9]. New Zealand has seen a very similar history in this
 period to Australia, with the added limitation that using 2011, the year
 of the Christchurch Earthquake and the residents of the second largest
 city living in broken housing through the following winter, is an
-extremely poor choice to include in baselines as an earthquake hitting
-the second largest city and people living in broken housing through the
-winter is not a reoccuring annual event.
+extremely poor choice to include in baselines as such an event is not a
+reoccurring annual one.
 
-While many international comparisons use a 5 year baseline range to
-increase the number of countries for which weekly level data is
+While many international covid comparisons use a 5 year baseline range
+to increase the number of countries for which weekly level data is
 available, in practice the results for New Zealand do not differ
 substantively between a 5 (2015-2019) and 7 (2013-2019) year baseline
 period. A 5 year linear baseline and a 7 year baseline both give a
@@ -183,9 +169,8 @@ population.
 ## Comparison of Gibson and Karlinsky & Kobak
 
 Starting from a commonly recognised best practice measure of mortality,
-age standised mortality, giving a cumulative excess mortality for
-2020-2022 in the range of -4% to -6% depending on analytic assumptions,
-we can compare other methods to that.
+age standised mortality, which gives a cumulative excess mortality for
+2020-2022 in the range of -4% to -6%, we can compare other methods.
 
 The Our World in Data cumulative excess (Projection based on Karlinsky &
 Kobak) gives cumulative excess mortality for 2020-2022 as 0%.
@@ -194,11 +179,11 @@ Gibson’s Population adjusted for changes in growth rates model gives an
 excess mortality for 2020-2022 range of 1.7% to 5.3% with the central
 estimate rounding to 4%.
 
-Though not mentioned in the paper, adding the Population as a model term
-to a death based model would normally be functionally equivalent to
-using the commonly known Crude Mortality Rate (deaths among the total
-population / total living population). A 2015-2019 linear regression of
-the annual CMR gives an excess of 1%.
+Though not mentioned in the paper, using Population as a model term to a
+death based model would normally be functionally equivalent to using the
+commonly known Crude Mortality Rate (deaths among the total population /
+total living population). A 2015-2019 linear regression of the annual
+CMR gives an excess of 1%.
 
 Gibson’s method produces results further from actuarial standard methods
 than the Karlinsky & Kobak method. The reason for Gibson’s model
@@ -207,70 +192,96 @@ misapplying death rates by age. Young people frequently migrate and
 infrequently die. Old people infrequently migrate and frequently die.
 Applying a correction based on the amount of migration to the mortality
 of the total population (dominated by people not migrating) introduces
-unnecessary structural error.
+structural error.
 
 <figure>
 <img src="md_figures/figure3.png"
 data-fig-alt="Young people migrate, old people die"
 data-fig-align="center"
-alt="Figure 3: Ages of migration and ages of death have little overlap" />
-<figcaption aria-hidden="true">Figure 3: Ages of migration and ages of
+alt="Figure 1: Ages of migration and ages of death have little overlap" />
+<figcaption aria-hidden="true">Figure 1: Ages of migration and ages of
 death have little overlap</figcaption>
 </figure>
 
 Conversely, because the Karlinsky & Kobak method only uses death data,
 it implicitly limits itself to the population that dies. The population
 mainly dying are not migrating, so the model does not diverge as far
-from ASM as the Gibson method when border changes cause major
-fluctuations in migration.
+from age standardised mortality as the Gibson method when border changes
+cause major fluctuations in migration.
+
+If 2020 had the same single year of age death rates as 2019, and new
+migrant 2020 death rates were the same as the equivalently aged
+non-migratory population in 2019, then we can calculate the expected
+deaths from the 35,744 reduction in nett migrationfrom 2019 to 2020.
+Using single age death rates the youthful migrating population would be
+expected to result in 85 fewer deaths for the 35,744 reduction in total
+population.
+
+Conversely, the expected increase in deaths due to aging can be
+calculated by aging the 2019 resident population by one year, and
+subtracting annual deaths of that age, and applying the single year
+death rates of 2019 (the same assumption as deaths expected from
+migration). For the resident population, there would be an expected rise
+of 837 deaths while the total population decreased by about 34,000.
+
+Gibson’s decision not to apply total population but not age to the model
+excludes an increase in expected deaths of an approximate order of
+magnitude greater than the effects of migration. But all these
+complexities are avoided by incorporating both migration and aging by
+using age standardised mortality.
 
 Gibson asserted that it was not important to incorporate aging:
 
-*If societal aging was a cause of the increased number of deaths, as
-Gabel and Knox (2023) put forward as a reason for the excess mortality
-in 2022, it should also show up prior to the COVID-19 era, given that
-societal aging is a long-term process.*
+> *If societal aging was a cause of the increased number of deaths, as
+> Gabel and Knox (2023) put forward as a reason for the excess mortality
+> in 2022, it should also show up prior to the COVID-19 era, given that
+> societal aging is a long-term process.*
 
 The assumption that aging is a long term process so should show up as a
 long slow process only applies if there are no sudden demographic shifts
 among age groups that alter the risk of death. The number of 75 and
-older residents, when compared to the 2012-2016 trend, and that trend
-can be seen increasing in 2019. This matches a “sudden” demographic
-shift of a spike in the age distribution that began decades earlier and
-naturally aged into ranges that play a more significant role in total
-deaths.
+older residents, when compared to the 2012-2016 trend, was increasing in
+2019. This matches a “sudden” demographic shift of a spike in the age
+distribution that began decades earlier and naturally aged into ranges
+that play a more significant role in total deaths.
 
 <figure>
 <img src="md_figures/figure4.png"
 data-fig-alt="Aging increases deaths and the crude death rate"
 data-fig-align="center"
-alt="Figure 4: The rate of increase in elderly accelerated in 2019" />
-<figcaption aria-hidden="true">Figure 4: The rate of increase in elderly
+alt="Figure 2: The rate of increase in elderly accelerated in 2019" />
+<figcaption aria-hidden="true">Figure 2: The rate of increase in elderly
 accelerated in 2019</figcaption>
 </figure>
 
 Of more surprise is that Gibson’s results for 2020-22 less well
 approximate the crude mortality rate than Karlinsky & Kobak, since the
-crude mortality rate is the accepted method of comparing death rates
-while ignoring the effects of age. While there is not enough information
-in the paper to exactly replicate Gibson’s method and achieve the same
+crude mortality rate is the normal method of comparing death rates while
+ignoring the effects of age. While there is not enough information in
+the paper to exactly replicate Gibson’s method and achieve the same
 answers, part of the reason for the difference seems likely to be the
 unusual step of treating population as an additive contributor to deaths
-in his modification of the regression. But, compared to the differences
-with methods acknowledging age, such problems are minor.
+in his modification of Karlinsky & Kobak. But, compared to the
+differences with methods acknowledging age, such problems are minor.
 
-I suggest anyone interested in this topic go explore population ages and
-death rates at Stats NZ themselves, and while there have a look at New
-Zealand death rates by age, or indeed the public, downloadable,
-standardised death rates. And then ask yourself, given the ready
-availability of high quality data, is the best default course of action
-to use the source that automatically compensates for the most
-confounders?
+Gibson’s results are also at variance with other countries statistical
+authorities, the Australian Bureau of Statistic’s age based mortality
+analysis has excess mortality of 3.4% across 2020-2022[^10]. Karlinsky &
+Kobak’s approximation of 4% is much closer than Gibson’s result of -3%.
+
+I suggest anyone interested in the topic of New Zealand mortality go
+explore population ages and death rates at Stats NZ themselves, and
+while there have a look at New Zealand death rates by age, or indeed the
+public, downloadable, standardised death rates. And then ask yourself,
+given the ready availability of high quality data, is the best default
+course of action to use the source that automatically compensates for
+the most confounders?
 
 [^1]: John Gibson (22 Feb 2024): Cumulative excess deaths in New Zealand
     in the COVID-19 era: biases from ignoring changes in population
     growth rates, New Zealand Economic Papers, DOI:
-    10.1080/00779954.2024.2314770
+    10.1080/00779954.2024.2314770 available from
+    https://doi.org/10.1080/00779954.2024.2314770
 
 [^2]: Ariel Karlinsky, Dmitry Kobak (2021) Tracking excess mortality
     across countries during the COVID-19 pandemic with the World
@@ -289,13 +300,17 @@ confounders?
 [^5]: Actuaries Institute: CMI Working Paper 180
     https://www.actuaries.org.uk/learn-and-develop/continuous-mortality-investigation/cmi-working-papers/mortality-projections/cmi-working-paper-180
 
-[^6]: Ashley Bloomfield, 2024, personal communication
+[^6]: <https://mortality.org/File/GetDocument/Public/STMF/DOC/STMFmetadata.pdf>
 
-[^7]: NZ annual deaths are available from
+[^7]: Ashley Bloomfield, 2024, personal communication
+
+[^8]: NZ annual deaths are available from
     <https://infoshare.stats.govt.nz> in Population : Deaths : Deaths by
     age and sex (Annual-Dec). NZ mean annual population is available
     from Population : Population Estimates - DPE : Estimated Resident
     Population by Age and Sex (1991+) (Annual-Dec) : Mean year ended.
 
-[^8]: Australian Bureau of Statistics.
+[^9]: Australian Bureau of Statistics.
     https://www.abs.gov.au/articles/measuring-australias-excess-mortality-during-covid-19-pandemic-until-first-quarter-2023#methodology
+
+[^10]: https://www.abs.gov.au/articles/measuring-australias-excess-mortality-during-covid-19-pandemic-until-august-2023#key-statistics
