@@ -64,8 +64,10 @@ ggplot(aes(x=AgeN, y=percent, fill=series))+
                      labels=c("under 1","30","60","90+")) +
   labs(title="2019 Deaths vs. Migrants\nas percentage of resident population",
        y="Percentage", x="Age",
-       caption="Source: infoshare.stats.govt.nz")
-ggsave(filename="md_figures/figure3.png",
+       caption="Source: infoshare.stats.govt.nz: Deaths by age and sex (Annual-Dec)
+Estimated Resident Population by Age and Sex (1991+) (Annual-Dec)
+Estimated migration by direction, age group and sex, 12/16-month rule (Annual-Dec)")
+ggsave(filename="../rawfiles/md_figures/figure1.png",
        height=4, width = 6, dpi=300, units = "in", bg = "white")
-ggsave(filename="../md_figures/figure3.png",
+ggsave(filename="../md_figures/figure1.png",
        height=4, width = 6, dpi=300, units = "in", bg = "white")

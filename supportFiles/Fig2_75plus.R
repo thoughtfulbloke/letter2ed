@@ -1,4 +1,4 @@
-# table comparing CDR and ASMR predictions
+# 75+ trend
 
 library(dplyr)
 library(tidyr)
@@ -34,9 +34,9 @@ ggplot(DPE, aes(x=Year, y=Living75plus))+
   scale_x_continuous(breaks=c(2012,2016,2020))+
   labs(title="Actual 75 years and older vs 2012-2016 trend",
        y="Residents 75 years and Older", x="Year",
-       caption="Source: infoshare.stats.govt.nz")
-ggsave(filename="md_figures/figure4.png",
+       caption="Source: infoshare.stats.govt.nz
+Population Estimates - DPE : Estimated Resident Population by Age and Sex (1991+) (Annual-Dec)")
+ggsave(filename="../rawfiles/md_figures/figure2.png",
        height=4, width = 6, dpi=300, units = "in", bg = "white")
-ggsave(filename="../md_figures/figure4.png",
+ggsave(filename="../md_figures/figure2.png",
        height=4, width = 6, dpi=300, units = "in", bg = "white")
-
