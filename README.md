@@ -1,7 +1,7 @@
-Draft Letter
+Letter to Editor
 ================
 David Hood
-3/21/24
+3/22/24
 
 *The timetable is: On Friday 22nd I will be distribution the final draft
 to people who have expressed an interest in co-signing, with an aim to
@@ -20,7 +20,7 @@ claims:
   and Kobak (2021)\][^1].
 - That Gibson’s method, producing positive excess mortality, is more
   effective than Karlinsky & Kobak in determining excess mortality as it
-  adjusts for immigration based changes in the rate of population
+  adjusts for immigration-based changes in the rate of population
   growth.
 
 Neither of these claims are accurate.
@@ -48,8 +48,8 @@ While calculation of New Zealand’s cumulative excess mortality for
 exact method adopted, using an age-standardised death rates method the
 UK’s Institute and Faculty of Actuaries finds New Zealand’s excess
 mortality from week 10 2020 to the end of 2022 to be -4% (that there are
-4% fewer deaths than would be expected based on pre-COVID-19
-trends) (Institute and Faculty of Actuaries 2024).
+4% fewer deaths than would be expected based on pre-COVID-19 trends)
+(Institute and Faculty of Actuaries 2024).
 
 The Our World in Data graph, and the Karlinsky and Kobak method that
 underlies it, is an approximation (if it is a better or worse
@@ -80,7 +80,7 @@ negative excess, and that method has been used for centuries,
 world-wide, across multiple disciplines. We can check if New Zealand
 medical professionals are aware of this by asking them.
 
-> “*the key point being any comparisons both within country (over time)
+> “…*the key point being any comparisons both within country (over time)
 > or between countries should be age standardised to provide the most
 > accurate picture possible (and of course be based on high quality and
 > complete underlying deaths data which we can say NZ’s are!)*”
@@ -152,9 +152,10 @@ for 2020-2022, while using a 2013-2019 baseline gives -6%[^5].
 
 ## Comparison of Gibson and Karlinsky & Kobak
 
-Starting from a commonly recognised best practice measure of mortality,
-age stanardised mortality, which gives a cumulative excess mortality for
-2020-2022 in the range of -4% to -6%, we can compare other methods.
+To measure the accuracy of approximations of mortality, the difference
+of an approximation to age-standardised mortality methods can be
+measured. Earlier age-stratified methods give a cumulative excess
+mortality for 2020-2022 in the -4% to -6% range.
 
 The Our World in Data cumulative excess (Projection based on Karlinsky &
 Kobak) gives cumulative excess mortality for 2020-2022 as 0%.
@@ -179,7 +180,7 @@ structural error.
 
 <figure>
 <img src="md_figures/figure1.png"
-data-fig-alt="Young people migrate, old people die"
+data-fig-alt="Young people mainly migrate, old people mainly die"
 data-fig-align="center"
 alt="Figure 1: Ages of migration and ages of death have little overlap" />
 <figcaption aria-hidden="true">Figure 1: Ages of migration and ages of
@@ -196,7 +197,7 @@ If 2020 had the same single year of age death rates as 2019, and new
 migrant 2020 death rates were the same as the equivalently aged
 non-migratory population in 2019, then we can calculate the expected
 deaths from the 35,744 reduction in nett migration from 2019 to 2020.
-Using single age death rates the youthful migrating population would be
+Using single age death rates, the youthful migrating population would be
 expected to result in 85 fewer deaths for the 35,744 reduction in total
 population[^7].
 
@@ -220,7 +221,7 @@ Gibson asserted that it was not important to incorporate aging:
 > in 2022, it should also show up prior to the COVID-19 era, given that
 > societal aging is a long-term process.*
 
-The assumption that aging is a long term process so should show up as a
+The assumption that aging is a long-term process so should show up as a
 long slow process only applies if there are no sudden demographic shifts
 among age groups that alter the risk of death. The number of 75 and
 older residents, when compared to the 2012-2016 trend, was also
@@ -230,7 +231,7 @@ aged into ranges that play a more significant role in total deaths.
 
 <figure>
 <img src="md_figures/figure2.png"
-data-fig-alt="Aging increases deaths and the crude death rate"
+data-fig-alt="The number of living elderly has been growing faster than trend prior to 2020"
 data-fig-align="center"
 alt="Figure 2: The rate of increase in elderly accelerated in 2019" />
 <figcaption aria-hidden="true">Figure 2: The rate of increase in elderly
@@ -335,20 +336,22 @@ Complete Set of Tables ... The Third Edition, Much Enlarged*. T. Cadell.
     https://github.com/dkobak/excess-mortality
 
 [^2]: The Crude Mortality Rate (CMR) is a simple calculation of the
-    total number of deaths in a population divided by that population. 
+    total number of deaths in a population divided by that population.
     The CMR allows comparability of populations of different sizes, but
     does not make any allowance for differences in composition between
     populations
 
-[^3]: <https://mortality.org/File/GetDocument/Public/STMF/DOC/STMFmetadata.pdf>
+[^3]: The count of 38 countries was obtained from counting the countries
+    in the STMF metadata file
+    https://mortality.org/File/GetDocument/Public/STMF/DOC/STMFmetadata.pdf
 
 [^4]: NZ annual deaths are available from
-    <https://infoshare.stats.govt.nz> in Population : Deaths - VSD :
+    https://infoshare.stats.govt.nz in Population : Deaths - VSD :
     Deaths by age and sex (Annual-Dec). NZ mean annual population is
     available from Population : Population Estimates - DPE : Estimated
     Resident Population by Age and Sex (1991+) (Annual-Dec) : Mean year
     ended. The 1961 age standardised mortality rate figures are in
-    Populstion: Death Rates - DMM : Standardised death rates (Maori and
+    Population: Death Rates - DMM : Standardised death rates (Maori and
     total population) (Annual-Dec). Raw data and analysis code at
     https://github.com/thoughtfulbloke/letter2ed in the support_files
     folder.
@@ -358,12 +361,12 @@ Complete Set of Tables ... The Third Edition, Much Enlarged*. T. Cadell.
     folder.
 
 [^6]: NZ crude death rates are available from
-    <https://infoshare.stats.govt.nz> in Death Rates - DMM Table: Crude
-    death rate (Maori and total population) (Annual-Dec). Raw data and
-    analysis code at https://github.com/thoughtfulbloke/letter2ed in the
-    support_files folder.
+    https://infoshare.stats.govt.nz in Population : Death Rates - DMM
+    Crude death rate (Maori and total population) (Annual-Dec). Raw data
+    and analysis code at https://github.com/thoughtfulbloke/letter2ed in
+    the support_files folder.
 
-[^7]: NZ migration data available from <https://infoshare.stats.govt.nz>
+[^7]: NZ migration data available from https://infoshare.stats.govt.nz
     in Tourism : International Travel and Migration - ITM : Table:
     Estimated migration by direction, age group and sex, 12/16-month
     rule (Annual-Dec). NZ death data available in Population : Deaths -
@@ -373,7 +376,7 @@ Complete Set of Tables ... The Third Edition, Much Enlarged*. T. Cadell.
     and analysis code at https://github.com/thoughtfulbloke/letter2ed in
     the support_files folder.
 
-[^8]: NZ death data available from <https://infoshare.stats.govt.nz> in
+[^8]: NZ death data available from https://infoshare.stats.govt.nz in
     Population : Deaths - VSD : Deaths by age and sex (Annual-Dec). NZ
     population data available in Population : Population Estimates - DPE
     : Estimated Resident Population by Age and Sex (1991+) (Annual-Dec).
