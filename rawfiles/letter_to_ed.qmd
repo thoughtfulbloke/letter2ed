@@ -102,3 +102,12 @@ Of more surprise is that Gibson's results for 2020-22 less well approximate the 
 Karlinsky & Kobak also appears superior for comparisons between countries, as Gibson's results are a worse approximation with ASMR based methods calculated by other countries statistical authorities. The Australian Bureau of Statistic's age based mortality analysis has excess mortality of 3.4% across 2020-2022 [@australianbureauofstatistics2023]. Karlinsky & Kobak's approximation of 4% is much closer to the ABS result than Gibson's result of -3%.
 
 I suggest anyone interested in the topic of New Zealand mortality go explore population ages and death rates at Stats NZ themselves, and while there have a look at New Zealand death rates by age, or indeed the public, downloadable, standardised death rates. And then ask yourself, given the ready availability of high quality data, is the best default course of action to use the source that automatically compensates for the most confounders?
+
+David Hood,
+
+University of Otago
+
+## References
+
+
+

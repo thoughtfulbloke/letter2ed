@@ -257,6 +257,12 @@ given the ready availability of high quality data, is the best default
 course of action to use the source that automatically compensates for
 the most confounders?
 
+David Hood,
+
+University of Otago
+
+## References
+
 <div id="refs" class="references csl-bib-body hanging-indent">
 
 <div id="ref-australianbureauofstatistics2023" class="csl-entry">
