@@ -1,11 +1,4 @@
-Letter to Editor
-================
-David Hood
-3/22/24
-
-*The timetable is: On Friday 22nd I will be distribution the final draft
-to people who have expressed an interest in co-signing, with an aim to
-send it to the journal early in the week beginning Monday 25th.*
+3/26/24
 
 To the editor and editorial board,
 
