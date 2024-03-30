@@ -1,77 +1,93 @@
 library(dplyr)
 library(tidyr)
 
-# Deaths, male/female single years then aggregate 95+
-DeathAges <- paste(2:99,"years")
-DeathAges <- c("Less than 1 year","1 year",DeathAges,"100 years and over")
-VSD <- read.csv("StatsNZData/VSD_DeathsDec_age_sex.csv", skip=1,
-                col.names = c("Year","Age","Male","Female")) |> 
-  mutate(Year = ifelse(Year == " ", NA_character_,Year)) |> 
-  fill(Year) |> 
-  filter(Age %in% DeathAges) |> 
-  group_by(Year,Age) |> #100 years + repeated in file so slicing 2nd
-  slice(1) |> 
-  ungroup() |> 
-  mutate(Age = ifelse(Age == "Less than 1 year","0 years",Age),
-         AgeN = as.numeric(gsub(" .*","",Age)),
-         AgeGroup = case_when(AgeN > 94 ~ 95,
-                              TRUE ~ AgeN),
+# Deaths, rearranged into long-style database form
+# Single years then 100+ by sex
+VSD_male <- read.csv("RawData/VSD_Deaths_Dec_age_sex.csv", skip=2) |> 
+  select(c(1,27:127)) |> 
+  rename(Year = X., X0.years = Less.than.1.year, X1.years=X1.year) |> 
+  filter(!is.na(X0.years)) |> 
+  gather(key="Agetext", value="Deaths", -Year) |> 
+  mutate(Ageshort = gsub("^X","",Agetext),
+         AgeN = as.numeric(gsub("[^0123456789].*","",Ageshort)),
+         Sex="Male",
          Year = as.numeric(Year)) |> 
-  summarise(.by = c(Year,AgeGroup),
-            Male=sum(Male),
-            Female=sum(Female)) |> 
-  filter(Year > 2005) |> 
-  gather(key="Sex", value="Deaths", Male, Female) 
+  select(Year, Sex, AgeN, Deaths)
+VSD_female <- read.csv("RawData/VSD_Deaths_Dec_age_sex.csv", skip=2) |> 
+  select(c(1,154:254)) |> 
+  rename(Year = X., X0.years = Less.than.1.year.1, X1.years=X1.year.1) |> 
+  filter(!is.na(X0.years)) |> 
+  gather(key="Agetext", value="Deaths", -Year) |> 
+  mutate(Ageshort = gsub("^X","",Agetext),
+         AgeN = as.numeric(gsub("[^0123456789].*","",Ageshort)),
+         Sex="Female",
+         Year = as.numeric(Year)) |> 
+  select(Year, Sex, AgeN, Deaths)
+
+VSD <- bind_rows(VSD_male, VSD_female)
 
 # Population Male/Female single years then 95+
-PopAges <- paste(0:94,"Years")
-PopAges <- c(PopAges,"95 Years and Over")
-DPE <- read.csv("StatsNZData/DPE_PopDecMean_age_sex.csv", skip=2,
-                col.names = c("Year","Age","Male","Female")) |> 
-  mutate(Year = ifelse(Year == " ", NA_character_,Year),
-         Age = ifelse(Age == " ", NA_character_,Age)) |> 
-  fill(Year,Age) |> 
-  filter(Age %in% PopAges) |> 
-  mutate(AgeN = as.numeric(gsub(" .*","",Age)),
-         AgeGroup = case_when(AgeN > 94 ~ 95,
-                              TRUE ~ AgeN),
+DPE_male <- read.csv("RawData/DPE_PopDecMean_age_sex.csv", skip=3) |> 
+  select(c(1,2:96,135)) |> 
+  rename(Year = X.) |> 
+  filter(!is.na(X0.Years)) |> 
+  gather(key="Agetext", value="Population", -Year) |> 
+  mutate(Ageshort = gsub("^X","",Agetext),
+         AgeN = as.numeric(gsub("[^0123456789].*","",Ageshort)),
+         Sex="Male",
          Year = as.numeric(Year)) |> 
-  summarise(.by = c(Year,AgeGroup),
-            Male=sum(Male),
-            Female=sum(Female)) |> 
-  filter(Year > 2005) |> 
-  gather(key="Sex", value="Population", Male, Female) 
+  select(Year, Sex, AgeN, Population)
+DPE_female <- read.csv("RawData/DPE_PopDecMean_age_sex.csv", skip=3) |> 
+  select(c(1,138:232,271)) |> 
+  rename(Year = X.) |> 
+  filter(!is.na(X0.Years.1)) |> 
+  gather(key="Agetext", value="Population", -Year) |> 
+  mutate(Ageshort = gsub("^X","",Agetext),
+         AgeN = as.numeric(gsub("[^0123456789].*","",Ageshort)),
+         Sex="Female",
+         Year = as.numeric(Year)) |> 
+  select(Year, Sex, AgeN, Population)
 
+DPE <- bind_rows(DPE_male, DPE_female) |> 
+  mutate(Population = as.numeric(Population),
+         Population = ifelse(is.na(Population), 0, Population)) 
+
+# need deaths to be the same age range as population
+VSD95 <- VSD |> 
+  mutate(AgeN = ifelse(AgeN > 95, 95, AgeN)) |> 
+  summarise(.by=c(Year,Sex,AgeN),
+            Deaths=sum(Deaths))
 # function for a liner regression off a chosen baseline with
 # a selected standard year
-excess2020to22 <- function(stdyr=2022, NZdeaths=VSD, NZpop=DPE, 
-                           basestart=2013, basestop=2019){
+cumulative_annual_excess <- function(stdyr=2022, NZdeaths=VSD95, NZpop=DPE, 
+                           basestart=2013, basestop=2019,
+                           exfrom=2020, exto=2022){
   stndpop <- NZpop |> filter(Year == stdyr) |> 
     select(-Year) |> rename(StPop = Population)
   stndmort <- NZdeaths |> 
-    inner_join(NZpop, by = join_by(Year, AgeGroup, Sex)) |> 
-    inner_join(stndpop, by = join_by(AgeGroup, Sex)) |> 
+    inner_join(NZpop, by = join_by(Year, AgeN, Sex)) |> 
+    inner_join(stndpop, by = join_by(AgeN, Sex)) |> 
     mutate(st_deaths_age = StPop * Deaths/Population) |> 
     summarise(.by=Year, StandardDeaths=sum(st_deaths_age))
   LMstandard = lm(StandardDeaths ~ Year, 
              stndmort |> filter(Year %in% basestart:basestop))
   stndmort$Expected <- LMstandard$coefficients[1] +
     LMstandard$coefficients[2] * stndmort$Year
-  stndmort$excess <- 100 * stndmort$StandardDeaths / 
-    stndmort$Expected - 100
-  cumexc <- sum(stndmort$excess[stndmort$Year %in% 2020:2022])
-  return(round(cumexc,0))
+  cumulatime <- stndmort |> filter(Year >= exfrom, Year <=exto)
+  percentage = 100 * sum(cumulatime$StandardDeaths) /
+    sum(cumulatime$Expected) - 100
+  return(percentage)
 }
 
 # Footnote 4 calculations:
 
-excess2020to22(stdyr=2023)
-excess2020to22(stdyr=2021)
-excess2020to22(stdyr=2019)
+round(cumulative_annual_excess(stdyr=2023),0)
+round(cumulative_annual_excess(stdyr=2021),0)
+round(cumulative_annual_excess(stdyr=2019),0)
 
 # 1961 standard population is just the Standard Death Rates
 # from infoshare
-DMM <- read.csv("StatsNZData/DMM_SDR_TotPop.csv",
+DMM <- read.csv("RawData/DMM_SDR_TotPop.csv",
                 skip=1) |> 
   filter(!is.na(Total.Population)) |> 
   rename(Year=1,SDR=2) |> 
@@ -80,13 +96,13 @@ DMModel <- lm(SDR ~ Year,
               DMM |> filter(Year %in% 2013:2019))
 DMM$Expected <- DMModel$coefficients[1] +
   DMModel$coefficients[2] * DMM$Year
-DMM$excess <- 100*DMM$SDR/DMM$Expected - 100
-cumexc <- sum(DMM$excess[DMM$Year %in% 2020:2022])
-print(round(cumexc,0))
+cumulatime <- DMM |> filter(Year >= 2020, Year <=2022)
+percentage = 100 * sum(cumulatime$SDR) /
+  sum(cumulatime$Expected) - 100
+print(round(percentage,0))
 
 # Footnote 5 calculations
-
-excess2020to22(basestart=2015)
-excess2020to22(basestart=2013)
+print(round(cumulative_annual_excess(basestart=2015),0))
+print(round(cumulative_annual_excess(basestart=2013),0))
 
 
