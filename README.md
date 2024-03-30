@@ -6,6 +6,7 @@ format:
   pdf:
     fig-pos: 'h'
 bibliography: references.bib
+csl: apa.csl
 ---
 
 
@@ -101,20 +102,16 @@ Gibson asserted that it was not important to incorporate aging:
 
 The assumption that aging is a long-term process so should show up as a long slow process only applies if there are no sudden demographic shifts among age groups that alter the risk of death. The number of 75 and older residents, when compared to the 2012-2016 trend, was also accelerating in 2019. This matches a "sudden" demographic shift of an acceleration in the age distribution that began decades earlier and naturally aged into ranges that play a more significant role in total deaths.
 
-![Figure 2: The rate of increase in elderly accelerated in 2019](md_figures/figure2.png){fig-alt="The number of living elderly has been growing faster than trend prior to 2020" fig-align="center"}
-But the dramatic increase in elderly only contributes to mortality as one of other interacting factors, such as the age specific risk environment. A more direct measure of importance is the difference in outcome between the Crude Mortality Rate (ignoring age structure) and the Age Standardised Mortality Rate (based on age startified death rates). The difference in excess mortality between those two methods is exactly and only the difference caused by using age specific death rates.
+![Figure 2: The rate of increase in elderly accelerated in 2019](md_figures/figure2.png){fig-alt="The number of living elderly has been growing faster than trend prior to 2020" fig-align="center"} But the dramatic increase in elderly only contributes to mortality as one of several interacting factors, such as the age specific risk environment. A more direct measure of the importance of age stratification is the difference in outcome between the Crude Mortality Rate (ignoring age structure) and the Age Standardised Mortality Rate (based on age stratified death rates). The difference in excess mortality between those two methods is exactly and only the difference caused by not using age specific death rates.
 
-Of more surprise is that Gibson's results for 2020-22 less well approximate the crude mortality rate than Karlinsky & Kobak, since the crude mortality rate is the normal method of comparing death rates while ignoring the effects of age. While there is not enough information in the paper to exactly replicate Gibson's method and achieve the same outcome, part of the reason for the difference seems likely to be the unusual step of treating population as an additive contributor to deaths in his modification of Karlinsky & Kobak. But, compared to the differences with methods acknowledging age, such problems are minor.
+Of more surprise than the comparison to age standartdised methods is that Gibson's results for 2020-22 less well approximate the crude mortality rate than Karlinsky & Kobak, since the crude mortality rate is the normal method of comparing death rates while ignoring the effects of age. While there is not enough information in the paper to exactly replicate Gibson's method and achieve the same outcome, part of the reason for the difference seems likely to be the unusual step of treating population as an additive contributor to deaths in his modification of Karlinsky & Kobak. But, compared to the differences with methods acknowledging age, such problems are minor.
 
 Karlinsky & Kobak also appears superior for comparisons between countries, as Gibson's results are a worse approximation with ASMR based methods calculated by other countries statistical authorities. The Australian Bureau of Statistic's age based mortality analysis has excess mortality of 3.4% across 2020-2022 [@australianbureauofstatistics2023]. Karlinsky & Kobak's approximation of 4% is much closer to the ABS result than Gibson's result of -3%.
 
-Specific methods are used to facilitate particular goals, such as breadth of comparison. Methods can righty be critiqued when applied to other goals, such as country specific accuracy. But in making such critiques, it is important to provide the existing best methods for that goal. And if making specific claims of improved accuracy, benchmarking each method against the most accurate establishes the relative worth of different methods.
+Specific methods are employed to achieve particular objectives, such as broadening the scope of comparison. It is reasonable to critique the use of such methods if they are applied to different objectives, such as ensuring accuracy on a country-specific level. However, in making such critiques, it is essential to identify the current best practices for achieving that specific objective. Additionally, when making claims about enhanced accuracy, it is crucial to benchmark each method against the most accurate standard to establish the comparative value of different approaches.
 
 David Hood,
 
 University of Otago
 
 ## References
-
-
-
