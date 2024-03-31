@@ -11,8 +11,6 @@ bibliography: references.bib
 csl: apa.csl
 ---
 
-
-
 This is the Github repo for my letter of comment on Gibson's article. The letter references the code data files in the support folder available here. For context, the final draft of the letter is included below, though this final draft may differ slightly from the published version.
 
 This is a response to the [@gibson2024] paper in which, to give my summary of the paper, Gibson asserts that New Zealand authorities' measurement of mortality in the pandemic period is based on a flawed metric. Gibson's own metric, based on regression of deaths with an additive component of total population, is asserted as a more accurate model and produces approximately 4% excess mortality for the 2020-2022 period. If New Zealand authorities are using flawed metrics with significantly different results to reality, this would have profound governance and policy implications.

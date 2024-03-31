@@ -1,19 +1,10 @@
 ---
 date: last-modified
 title: "Comment on Cumulative Excess Deaths in New Zealand in the COVID-19 Era: Biases from Ignoring Changes in Population Growth Rates"
-author: "David Hood"
-execute:
-  keep-md: true
-format:
-  pdf:
-    fig-pos: 'h'
+format: docx
 bibliography: references.bib
 csl: apa.csl
 ---
-
-
-
-This is the Github repo for my letter of comment on Gibson's article. The letter references the code data files in the support folder available here. For context, the final draft of the letter is included below, though this final draft may differ slightly from the published version.
 
 This is a response to the [@gibson2024] paper in which, to give my summary of the paper, Gibson asserts that New Zealand authorities' measurement of mortality in the pandemic period is based on a flawed metric. Gibson's own metric, based on regression of deaths with an additive component of total population, is asserted as a more accurate model and produces approximately 4% excess mortality for the 2020-2022 period. If New Zealand authorities are using flawed metrics with significantly different results to reality, this would have profound governance and policy implications.
 
@@ -52,7 +43,7 @@ While the existence of centuries of mortality measurement (not mentioned in Gibs
 
 As Age Standardised Mortality is a standard across multiple disciplines, but is not raised in the Gibson paper, a brief review is in order.
 
-Death rates for an age stratified group, for a time period in a given location, measure the rate at which that age group dies. These can be directly compared to death rates in other time periods and locations to measure if the group experience is more or less deadly. As it is a rate, it automatically adjusts for differences in the size of the age group.
+Death rates for an age stratified group, for a time period in a given location, measure the rate at which that age group dies. These can be directly compared to death rates in other time periods and locations to measure if the group experience is more, or less, deadly. As it is a rate, it automatically adjusts for differences in the size of the age group.
 
 While this enables direct comparisons of people of the same age, it does not enable total population comparisons (as total populations may have different age structures). Standardisation with a reference population addresses this by assessing the total population deaths on the basis of death rates by age if the places and times being compared had the same age structure.
 
