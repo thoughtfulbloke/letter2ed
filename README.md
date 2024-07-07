@@ -17,7 +17,7 @@ This is the Github repo for my letter of comment on Gibson's article. The letter
 
 ------------------------------------------------------------------------
 
-This is a response to the [@gibson2024] paper in which, to give my summary of the paper, Gibson asserts that New Zealand authorities' measurement of mortality in the pandemic period is based on a flawed metric. Gibson's own metric, based on regression of deaths with an additive component of total population, is asserted as a more accurate model and produces approximately 4% excess mortality for the 2020-2022 period. If New Zealand authorities are using flawed metrics with significantly different results to reality, this would have profound governance and policy implications.
+For hundreds of years, correctly measuring mortality has been a concern of actuaries, demographers, and health researchers. Accurate measurement should form the basis of insurance risk pricing and government policy. Writing in this journal, Gibson [@gibson2024] asserts that New Zealand authorities' measurement of mortality in the pandemic period is based on a flawed metric. Gibson's own metric, based on regression of deaths with an additive component of total population, is asserted as a more accurate model and produces approximately 4% excess mortality for the 2020-2022 period. If New Zealand authorities are using flawed metrics with significantly different results to reality, this would have profound governance and policy implications.
 
 In particular, the paper asserts two broad claims:
 
@@ -30,11 +30,11 @@ Neither of these claims are accurate.
 
 ## The underpinning of New Zealand's mortality measurement
 
-For centuries, it has been established practice among actuaries, demographers, and health researchers to measure mortality using age-adjusted death rates where such data is available [@price1773]. This method supersedes the use of Crude Mortality Rates[^2] by acknowledging that different ages have different risks of death, so comparing age-based risk of death on a uniform basis. In New Zealand, tutorials on making mortality comparisons by using death rates by age and standardising to a reference population have been published since the 1890s [@didsbury1891].
+For centuries, it has been established professional practice to measure mortality using age-adjusted death rates where such data is available [@price1773]. This method supersedes the use of Crude Mortality Rates[^2] by acknowledging that different ages have different risks of death, so comparing age-based risk of death on a uniform basis. In New Zealand, tutorials on making mortality comparisons by using death rates by age and standardising to a reference population have been published since the 1890s [@didsbury1891].
 
 [^2]: The Crude Mortality Rate (CMR) is a simple calculation of the total number of deaths in a population divided by that population. The CMR allows comparability of populations of different sizes, but does not make any allowance for differences in composition between populations
 
-Age Standardised Mortality directly adjusts for both population growth and aging, as it is based on the number of deaths of the current resident population divided by the current resident population, stratified by age group and time period. This directly measures the population change effects Gibson is trying to model.
+Age Standardised Mortality directly adjusts for both population growth and aging, as it is based on the number of deaths of the current resident population divided by the current resident population, stratified by age group and time period. This directly measures the population change effects Gibson is trying to model, and does so at the level of residents of that age in each time period.
 
 While calculation of New Zealand's cumulative excess mortality for 2020-2022 can vary by a couple of percentage points depending on the exact method adopted, using an age-standardised death rates method the UK's Institute and Faculty of Actuaries finds New Zealand's excess mortality from week 10 2020 to the end of 2022 to be -4% (that there are 4% fewer deaths than would be expected based on pre-COVID-19 trends) [@instituteandfacultyofactuaries2024].
 
@@ -46,7 +46,7 @@ The Our World in Data graph, and the Karlinsky and Kobak method that underlies i
 
 [^3]: The count of 38 countries was obtained from counting the countries in the STMF metadata file https://mortality.org/File/GetDocument/Public/STMF/DOC/STMFmetadata.pdf
 
-The existence of centuries of mortality measurement establishes that it is best practice in mortality calculations to recognise that people of different ages die at different rates not mentioned in Gibson's article. While New Zealand medical professionals have used the Karlinsky and Kobak method/ Our World in Data graphs in media presentations, it is not established if that was for the designed purpose while still being aware of more accurate methods or because K & K was considered definitive. We can check if New Zealand medical professionals are aware of best practice methods by asking them.
+The existence of centuries of mortality measurement establishes that it is best practice in mortality calculations to recognise that people of different ages die at different rates not mentioned in Gibson's article. While New Zealand medical professionals have used the Karlinsky and Kobak method/ Our World in Data graphs in media presentations, it is not established if that was for the designed practical purposes while still being aware of more accurate methods or because K & K was considered definitive. We can check if New Zealand medical professionals are aware of best practice methods by asking them.
 
 > '...*the key point being any comparisons both within country (over time) or between countries should be age standardised to provide the most accurate picture possible (and of course be based on high quality and complete underlying deaths data which we can say NZ's are!)*' [@bloomfield2024]
 
@@ -66,9 +66,7 @@ Some variation in calculated results can be caused by the choice of standard pop
 
 [^5]: NZ annual deaths are available from https://infoshare.stats.govt.nz in Population : Deaths - VSD : Deaths by age and sex (Annual-Dec). NZ mean annual population is available from Population : Population Estimates - DPE : Estimated Resident Population by Age and Sex (1991+) (Annual-Dec) : Mean year ended. The 1961 age standardised mortality rate figures are in Population: Death Rates - DMM : Standardised death rates (Maori and total population) (Annual-Dec). Raw data and analysis code at https://github.com/thoughtfulbloke/letter2ed in the support_files folder.
 
-These methods use StatsNZ annual counts of resident deaths and resident population, rather than the weekly counts from mortality.org, as mortality.org takes the raw StatsNZ data and interpolates ages to the weekly totals based on the typical annual age distribution of deaths. This is why New Zealand data for weekly death counts at mortality.org contains decimal places.
-
-Using detailed annual StatsNZ age counts of resident deaths and population prevents inaccuracy in results from overly broad age groups. In 2019 the age specific death rate[^6] of 10-14 year olds (0.17 per 1000 residents of that age per year) approximately doubles by age 15-19 (0.41), and doubles again by 35-39 (0.83). More doubling takes place by 45-49 (1.95), 55-59 (4.45), and 65-69 (10.27). With the speed of doubling being even faster in older aged that make up the majority of deaths, mortality measurements can be very sensitive to even a few years of change in the population balance.
+For calculating age specific death rates, using detailed annual StatsNZ age counts of resident deaths and population prevents inaccuracy in results from overly broad age groups. In 2019 the age specific death rate[^6] of 10-14 year olds (0.17 per 1000 residents of that age per year) approximately doubles by age 15-19 (0.41), and doubles again by 35-39 (0.83). More doubling takes place by 45-49 (1.95), 55-59 (4.45), and 65-69 (10.27). With the speed of doubling being even faster in older aged that make up the majority of deaths, mortality measurements can be very sensitive to even a few years of change in the population balance. Any method calculating cumulative excess using shorter individual time periods should, if correct, produce the same result for the same total time period.
 
 [^6]: https://infoshare.stats.govt.nz/ Population : Death Rates - DMM : Age-specific death rates by sex, December years (total population) (Annual-Dec)
 
@@ -122,10 +120,12 @@ But the dramatic increase in elderly is only one of several interacting factors 
 
 Of more surprise than the comparison to age standardised methods is that Gibson's results for 2020-22 less well approximate the crude mortality rate than Karlinsky & Kobak, since the crude mortality rate is the normal method of comparing death rates while ignoring the effects of age. While there is not enough information in the paper to exactly replicate Gibson's method and achieve the same outcome, part of the reason for the difference seems likely to be the unusual step of treating population as an additive contributor to deaths in his modification of Karlinsky & Kobak. But, compared to the differences with methods acknowledging age, such problems are minor.
 
-Karlinsky & Kobak also appears superior for comparisons between countries, as Gibson's results are a worse approximation with ASMR based methods calculated by other countries statistical authorities. The Australian Bureau of Statistic's age based mortality analysis has excess mortality of 3.4% across 2020-2022 [@australianbureauofstatistics2023]. Karlinsky & Kobak's approximation of 4% is much closer to the ABS result than Gibson's result of -3%.
+Karlinsky & Kobak also appears superior for comparisons between countries, as Gibson's results are a worse approximation with ASMR (Age Specific Mortality Rate) based methods calculated by other countries statistical authorities. The Australian Bureau of Statistic's age based mortality analysis has excess mortality of 3.4% across 2020-2022 [@australianbureauofstatistics2023]. Karlinsky & Kobak's approximation of 4% is much closer to the ABS result than Gibson's result of -3%.
 
 ## Conclusion
 
 Specific methods are employed to achieve particular objectives, such as broadening the scope of comparison. It is reasonable to critique the use of such methods if they are applied to different objectives, such as ensuring accuracy on a country-specific level. However, in making such critiques, it is essential to identify the current best practices for achieving that specific objective. Additionally, when making claims about enhanced accuracy, it is crucial to benchmark each method against the most accurate standard to establish the comparative value of different approaches.
+
+From comparison to best practice ASMR methods, K&K are closer in result than Gibson's method. Further, given the results of ASMR, New Zealand and international professionals have a sound basis for determining New Zealand's excess mortality as negative for the covid period.
 
 ## References
