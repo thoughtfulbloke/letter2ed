@@ -93,7 +93,7 @@ DMM <- read.csv("RawData/DMM_SDR_TotPop.csv",
   rename(Year=1,SDR=2) |> 
   mutate(Year = as.numeric(Year))
 DMModel <- lm(SDR ~ Year, 
-              DMM |> filter(Year %in% 2013:2019))
+              DMM |> filter(Year %in% 2015:2020))
 DMM$Expected <- DMModel$coefficients[1] +
   DMModel$coefficients[2] * DMM$Year
 cumulatime <- DMM |> filter(Year >= 2020, Year <=2022)

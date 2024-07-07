@@ -121,7 +121,7 @@ ggplot(combo, aes(x=AgeN, ymax=Percent, fill=Series))+
   scale_fill_manual(values=c("#000000", "#CCCCCCAA"), name="Series:")+
   scale_x_continuous(breaks=c(0,30,60,90),
                      labels=c("under 1","30","60","90+")) +
-  labs(title="2019 Deaths vs. Net Migrantion",
+  labs(title="2019 Deaths vs. Net Migration",
        subtitle="as percentage of resident population",
        y="Percentage", x="Age",
        caption="Source: infoshare.stats.govt.nz: Deaths by age and sex (Annual-Dec)
