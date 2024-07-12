@@ -2,7 +2,9 @@
 date: last-modified
 author: "David Hood"
 title: "Comment on Cumulative Excess Deaths in New Zealand in the COVID-19 Era: Biases from Ignoring Changes in Population Growth Rates"
-format: docx
+format:
+  pdf:
+    fig-pos: 'h'
 bibliography: references.bib
 csl: apa.csl
 ---
