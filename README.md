@@ -13,9 +13,10 @@ published version.
 While the data files and R code for generating the results and figures
 is available in the support folder, as not everyone is familiar with R,
 I am also providing an [Excel file in the
-supportFiles](supportFiles/ASMR_in_Excel.xlsx) folder which implements
-the normal Age Standardised Mortality steps so that people can review
-and test the logic themselves. It shows the steps of:
+supportFiles](supportFiles/ASMR_in_Excel.xlsx) folder (use the download
+raw files button in the upper right) which implements the normal Age
+Standardised Mortality steps so that people can review and test the
+logic themselves. It shows the steps of:
 
 1)  Obtain annual resident population by age data from
     https://infoshare.stats.govt.nz : Population : Population
