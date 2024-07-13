@@ -2,61 +2,78 @@ Comment on Cumulative Excess Deaths in New Zealand in the COVID-19 Era:
 Biases from Ignoring Changes in Population Growth Rates
 ================
 David Hood
-7/12/24
+7/13/24
 
 This is the Github repo for my letter of comment on Gibson’s article.
-The letter references the code data files in the supportFiles folder
+The letter references the code data files in the support_files folder
 available here. For context, the final draft/ preprint of the letter is
 included below, though this final draft may differ slightly from any
 published version.
 
 While the data files and R code for generating the results and figures
-is available in the support folder, as not everyone is familiar with R,
-I am also providing an [Excel file in the
-supportFiles](supportFiles/ASMR_in_Excel.xlsx) folder (use the download
-raw files button in the upper right of the Excel file screen) which
-implements the normal Age Standardised Mortality steps so that people
-can review and test the logic themselves. It shows the steps of:
+is available in the support_files folder, as not everyone is familiar
+with R, I am also providing an [Excel file in the
+support_files](support_files/ASMR_in_Excel.xlsx) folder (use the
+download raw files button in the upper right of the Excel file screen)
+which implements the normal Age Standardised Mortality steps so that
+people can review and test the logic themselves. It shows the steps of:
 
 1)  Obtain annual resident population by age data from
     https://infoshare.stats.govt.nz : Population : Population
     Estimates - DPE : Estimated Resident Population by Age and Sex
     (1991+) (Annual-Dec) : Mean year ended, both Male and Female, 0 -94
-    then 95+, years 2013-2022
+    then 95+, years 2013-2022. Because you need to know how many living
+    people of each age are resident in an area in a given time period to
+    calculate age specific death rates.
 
 2)  Obtain annual resident death by age data from
     https://infoshare.stats.govt.nz : Population : Deaths - VSD : Deaths
     by age and sex (Annual-Dec) : both Male and Female, 0 -99 then 100+,
-    years 2013-2022
+    years 2013-2022. Because you need to know how many people die of
+    each age who are resident in an area in a given time period to
+    calculate age specific death rates.
 
 3)  Combine the 95 to 100 + categories in the death data to the same age
     range as the population data (95+) in order to be able to match
-    people of the same age in the same year
+    people of the same age in the same year. Because you need to be able
+    to match the age categories between deaths and population.
 
-4)  calculate death rates for each age group of residents for each year.
+4)  Calculate death rates for each age group of residents for each year.
+    Because age specific death rates of those resident in an area for a
+    time period enables population size independent comparisons over
+    time.
 
 5)  Multiple the individual age death rates in each year by a standard
     population, so that total death changes between years are considered
     on the basis of the same population and age structure in every year,
     to avoid mistaking non-fatal changes in population size and
     structure as changes in risk of death. In this example, the New
-    Zealand population of 2022 is used
+    Zealand population of 2022 is used. Because to get a whole of
+    population death figure from death rates requires specifying a
+    population the death rates belong to.
 
 6)  Total the standard deaths for each year, to generate the number
     (based on death rates) of deaths if the population had been the same
     as the year of the standard population, but the age specific risk of
-    death was the same as the historical period.
+    death was the same as the historical period. Because the desired
+    outcome is to understand if there were more or fewer deaths
+    independent of population change.
 
 7)  Preform a regression on the years 2013-2019 to account for trends
     beyond changes to the population value. The expected value as a
     result of the regression corrects for historical trends such as the
     improvement in health understanding and care (as per the article
     2013-2019 is considered the optimal baseline for Australasia without
-    triggering structural bias)
+    triggering structural bias). Because life expectancy changes over
+    time.
 
 8)  Project the regression trend into 2020 through 2022 to determine
     expected deaths given a population structure of the standard year.
-    Compared them to actual standardised deaths
+    Compared them to actual standardised deaths. Because projecting a
+    regression trend for a short period is an established
+    counter-factual to use as an expected value for comparisons of
+    unexpected change- testing if actual results are changing different
+    to the past trend.
 
 9)  Cumulative excess is sum(actual)/sum(expected) - 1 expressed as a
     percentage.
